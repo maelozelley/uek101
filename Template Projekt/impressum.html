@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Inculde Fontawesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--- Inculde Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--- Inculde JavaScript -->
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Garage Ozelley AG</title>
+
+  </head>
+  <body>
+
+    
+    <!--- Header (z.B. Hero Part) -->
+    <header>
+
+      
+      <!--- Navigation -->
+          <div class="logo">
+            <img class="logovw" src="images/vw_logo_white.png" alt="logovw">
+          </div>
+
+          <nav id="navigation_nav">
+
+            <ul>
+              <li>
+                <a class="home_home" href="home.html">Home</a>
+              </li>
+            </ul>
+            
+            <ul>
+              <li>
+                <a class="service_home" href="service.html">Service</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a class="kontakt_home" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+      
+      
+          </nav>
+
+      <a class="nav-burger" onclick="toggleMainNav()">
+        <i class="burger-icon" data-feather="menu"></i>
+        <i class="burger-icon hidden" data-feather="x"></i>
+    </a>
+
+    </header>
+
+    <main class="main-service">
+        <div class="impressum-all">
+            <div class="impressum-title">
+                <h1>Impressum</h1>
+            </div>
+    
+            <div class="impressum-unsplash">
+              <div>
+                <a href="https://unsplash.com/" target="_blank"><p class="text-impressum">Unsplash Bilder</p></a>
+              </div>
+            </div>
+
+            <div class="impressum-unsplash">
+              <div>
+                <a href="https://www.google.com/search?q=vw+logo+icon&rlz=1C1GCEB_enCH966CH966&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi4xdqjxZ_0AhVLgf0HHVH1CUUQ_AUoAXoECAEQAw&biw=2133&bih=1087&dpr=0.9#imgrc=_txYiUudnEhwgM" target="_blank"><p class="logo-impressum">VW Logo</p></a>
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+     <!--- Footer -->
+     <footer>
+        <a href="https://www.facebook.com/"><i data-feather="facebook">facebook</i></a>
+      </footer>
+  
+      <script>
+         feather.replace()
+  
+         function toggleMainNav() {
+          $('#navigation_nav').toggleClass('expanded');
+          $('.burger-icon').toggleClass('hidden');
+          };
+      </script>
+  
+    </body>
+  </html>

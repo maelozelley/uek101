@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Inculde Fontawesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--- Inculde Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--- Inculde JavaScript -->
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Garage Ozelley AG</title>
+
+  </head>
+  <body>
+
+    
+    <!--- Header (z.B. Hero Part) -->
+    <header>
+
+      
+      <!--- Navigation -->
+          <div class="logo">
+            <img class="logovw" src="images/vw_logo_white.png" alt="logovw">
+          </div>
+
+          <nav id="navigation_nav">
+
+            <ul>
+              <li>
+                <a class="home_nav" href="home.html">Home</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a class="service_nav" href="service.html">Service</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a class="kontakt-nav" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+      
+      
+          </nav>
+
+      <a class="nav-burger" onclick="toggleMainNav()">
+        <i class="burger-icon" data-feather="menu"></i>
+        <i class="burger-icon hidden" data-feather="x"></i>
+    </a>
+
+    </header>
+
+      <!--- Content -->
+    <main class="kontakt-all">
+      <div class="section-one">
+        <div class="kontakt">
+          <h2>Kontakt</h2>
+          <address>
+            <div>
+              <h3>Ozelley AG</h3>
+            </div>
+            <div>
+              <h3>Garage und Auto-Elektro-Service</h3>
+            </div>
+            <div>
+              <h3>Erlenauweg 5c 3110 Münsingen</h3>
+            </div>
+            <div>
+              <h3>Tel. 031 / 721 10 01</h3>
+            </div>
+            <div>
+              <h3>E-Mail: info@garage-ozelley.ch</h3>
+            </div>
+          </address>
+          <div class="location">
+              <h2>Standort</h2>
+              <div class="map">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10910.726192237824!2d7.56009!3d46.869639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e4a1502809543%3A0x1aea8bdfbd7eb3ec!2sErlenauweg%205C%2C%203110%20M%C3%BCnsingen!5e0!3m2!1sde!2sch!4v1636707897787!5m2!1sde!2sch" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+        </div>
+        
+        <div class="opentime">
+          <h2>Öffnungszeiten</h2>
+           
+              <div>
+                <h3>Montag - Freitag</h3>
+              </div>
+              <div>
+                <h3>07:30 - 12:00 Uhr</h3>
+              </div>
+              <div>
+                 <h3>13:30 - 17:30 Uhr</h3>
+              </div>
+            <h2>Verkauf</h2>
+              <div>
+                <h3>Montag - Freitag</h3>
+              </div>
+              <div>
+                <h3>07:30 - 12:00 Uhr</h3>
+              </div>
+              <div>
+                <h3>3:30 - 17:30 Uhr</h3>1
+              </div>
+              <div>
+                <h3>Samstag 08.00 - 11.00 Uhr</h3>
+              </div>
+        </div>
+      </div>
+    </main>
+
+     <!--- Footer -->
+    <footer>
+
+      <div>
+        <a href="impressum.html"><p class="impressum">Impressum</p></a>
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com/"><i data-feather="facebook">facebook</i></a>
+      </div>
+
+    </footer>
+
+    <script>
+       feather.replace()
+
+       function toggleMainNav() {
+        $('#navigation_nav').toggleClass('expanded');
+        $('.burger-icon').toggleClass('hidden');
+        };
+    </script>
+  </body>
+</html>

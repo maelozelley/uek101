@@ -1,0 +1,517 @@
+/****** RESET *******/
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/****** ROOT *******/
+body {
+  font-family: sans-serif;
+}
+
+/* HOME */
+/****** TYPOGRAPHY *******/
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 120px;
+  color: #A63C3C;
+  font-family: "Ropa Sans";
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 64px;
+  color: #6B98F2;
+  font-family: "Ropa Sans";
+  font-weight: normal;
+  margin-top: 50px;
+  margin-left: 20px;
+  
+}
+
+h3 {
+  font-size: 38px;
+  color: white;
+  margin: 20px;
+  line-height: 50px;
+}
+
+.service-text {
+  font-size: 38px;
+  color: white;
+  margin: 20px;
+  line-height: 60px;
+}
+
+.font {
+  margin-bottom: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+  margin-top: 30px;
+}
+
+.home {
+  color: #A63C3C;
+}
+
+.service_home:hover {
+  color: #A63C3C;
+}
+
+.kontakt_home:hover {
+  color: #A63C3C;
+}
+
+.home_home:hover {
+  color: #A63C3C;
+}
+
+
+.home_nav:hover {
+  color: #6B98F2;
+}
+
+.kontakt-nav {
+  color: #6B98F2;
+}
+
+.kontakt_nav:hover {
+  color: #6B98F2;
+}
+
+.service-nav {
+  color: #6B98F2;
+}
+
+.service_nav:hover {
+  color: #6B98F2;
+}
+
+.impressum {
+  color: white;
+  margin-left: 40px;
+}
+
+.home-text {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+/****** NAV *******/
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #222222;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-burger {
+  display: none;
+}
+
+#navigation_nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 30px;
+}
+
+/* logo nav*/
+.logo {
+  display: flex;
+  max-width: 5%;
+
+}
+
+.logovw {
+  display: flex;
+  max-width: 100%;
+  margin: 10px;
+}
+
+/* main */
+main {
+  display: flex;
+  background-color: #222222;
+}
+
+main div div img {
+  width: 100%;
+  display: grid;
+  background-repeat: no-repeat;
+}
+
+/****** FOOTER *******/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  border-top: 2px solid white;
+  height: 108px;
+}
+
+svg.feather.feather-facebook {
+  color: white;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+/* KONTAKT */
+/* Main */
+.kontakt-all {
+  display: flex;
+  flex-direction: column;
+}
+.section-one {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.opentime {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  width: 550px; 
+  height: 400px; 
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* Service */
+/* Main */
+  main.main-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iframe {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 892px;
+  }
+
+  .section-service {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+  }
+
+  /* IMPRESSUM */
+  /* Main */
+  .impressum-title {
+    margin-top: 100px;
+  }
+
+  .impressum-unsplash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .impressum-all {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-impressum {
+    font-size: 38px;
+    color: white;
+    margin: 20px;
+    line-height: 80px;
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 40px;
+    transition: background-color 1s ease;
+  }
+
+  .text-impressum:hover {
+    background-color: #A63C3C;
+  }
+
+  .logo-impressum {
+    font-size: 38px;
+    color: white;
+    margin: 20px;
+    line-height: 80px;
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 400px;
+    transition: background-color 1s ease;
+  }
+
+  .logo-impressum:hover {
+    background-color: #A63C3C;
+  }
+
+
+
+
+
+/****** MEDIA QUERIES *******/
+/****** All Tablet-Screens 768-1199px *******/
+@media screen and (max-width: 768px) {
+  /****** Tablet spezifischer Code *******/
+    .hidden {
+      display: none;
+}
+
+    #navigation_nav {
+      display:none;
+}
+
+    #navigation_nav.expanded {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #222222;
+      height: 100vh;
+      width: 100vw;
+}
+
+    .nav-burger {
+    display: block;
+    z-index: 1000;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    position: fixed;
+    width: 100%;
+  }
+
+
+  /* Fonts */
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: #A63C3C;
+    font-family: "Ropa Sans";
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size:26px;
+    color: #6B98F2;
+    font-family: "Ropa Sans";
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+  }
+  h3 {
+    font-size: 20px;
+    color: white;
+    margin-left: 0px;
+    line-height: 20px;
+  }
+  
+  .font {
+    font-size: 23px;
+    margin: 10px;
+    margin-bottom: 150px;
+  }
+  
+  .service-text {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    line-height: 30px;
+  }
+  
+  .text-impressum {
+    font-size: 18px;
+    color: white;
+    margin: 20px;
+    line-height: 40px;
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 400px;
+  }
+  
+  /* Logos */
+  
+  .burger-icon {
+    color: white;
+    margin: 5px;
+    margin-right: 15px;
+  }
+  .logo {
+    display: flex;
+    max-width: 10%;
+    
+  }
+  
+  .logovw {
+    display: flex;
+    max-width: 100%;
+    margin-left: 5px;
+  }
+  
+  /*Service*/
+  .section-service {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .iframe {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Kontakt */
+  .kontakt-all {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-one {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .kontakt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  
+  .opentime {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .section-two {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .location {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .map {
+    display: flex;
+    align-items: center;
+    width: 200px; 
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 0px; 
+  }
+  .section-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Impressum */
+  .impressum {
+    color: white;
+    margin-left: 20px;
+  }
+  
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    border-top: 2px solid white;
+    height: 50px;
+  }
+}

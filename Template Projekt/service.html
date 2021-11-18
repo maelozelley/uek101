@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Inculde Fontawesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--- Inculde Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--- Inculde JavaScript -->
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Garage Ozelley AG</title>
+
+  </head>
+  <body>
+
+    
+    <!--- Header (z.B. Hero Part) -->
+    <header>
+
+      
+      <!--- Navigation -->
+          <div class="logo">
+            <img class="logovw" src="images/vw_logo_white.png" alt="logovw">
+          </div>
+
+          <nav id="navigation_nav">
+
+            <ul>
+              <li>
+                <a class="home_nav" href="home.html">Home</a>
+              </li>
+            </ul>
+            
+            <ul>
+              <li>
+                <a class="service-nav" href="service.html">Service</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a class="kontakt_nav" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+      
+      
+          </nav>
+
+      <a class="nav-burger" onclick="toggleMainNav()">
+        <i class="burger-icon" data-feather="menu"></i>
+        <i class="burger-icon hidden" data-feather="x"></i>
+    </a>
+
+    </header>
+
+      <!--- Content -->
+      <main class="main-service">
+        <div class="iframe">
+          <iframe class="iframe" src="https://www.youtube.com/embed/C4tnfHO_r8U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="section-service"> 
+          <h2>Service & Reparaturen</h2>
+          <p class="service-text">Die Garage Ozelley AG ist offizieller VW- & VW-Nutzfahrzeuge-Partner. Durch kontinuierliche Schulungen bei den Herstellern ist unser Wissen stets auf neustem Stand. Nebst unserem Know-How setzen wir modellspezifische Spezialwerkzeuge ein, welche die professionelle Instandstellung Ihres Autos garantieren.</p>
+        </div>
+
+        <div class="section-service">
+          <h2>Umbau Behindertenfahrzeuge</h2>
+          <p class="service-text">Wir suchen Individuelle Lösungen, damit Sie sich rundum sicher fühlen. Unser Anliegen ist es, Ihre Bedürfnisse zu erkennen und Ihr Fahrzeug optimal an Sie anzupassen, damit Ihnen das Autofahren so leicht wie möglich fällt.Wir bauen Ihr Auto um, denn Ihre Mobilität soll auch mit einer körperlichen Beeinträchtigung erhalten bleiben. Unsere langjährige Erfahrung im Fahrzeuge-Umbau zeichnet uns aus und garantiert Ihnen eine professionelle Lösung. Auch für Passivfahrer (die betroffene Person ist MitfahrerIn) bauen wir Fahrzeuge um.</p>
+        </div>
+
+    </main>
+
+     <!--- Footer -->
+    <footer>
+
+      <div>
+        <a href="impressum.html"><p class="impressum">Impressum</p></a>
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com/"><i data-feather="facebook">facebook</i></a>
+      </div>
+
+    </footer>
+
+    <script>
+       feather.replace()
+
+       function toggleMainNav() {
+        $('#navigation_nav').toggleClass('expanded');
+        $('.burger-icon').toggleClass('hidden');
+        };
+    </script>
+
+  </body>
+</html>
